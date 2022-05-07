@@ -1,24 +1,27 @@
-
-
-var userNmae = window.prompt("Enter your name");
-console.log(userNmae);
+'use strict';
 
 
 
-var userGender = window.prompt("Enter your gender");
-if (userGender = 'male'){
-    console.log("Welcome Mr"+ userGender);
-}
-else{
-    console.log("Welcome Ms"+ userGender);
+var username =prompt('What is your name?');
+var gender =prompt('please enter your gender');
+if (gender.toLocaleLowerCase()=="male" || gender.toLocaleLowerCase()=="female" ){
+    alert('accepted vale.');
 }
 
-var userAge = window.prompt("Enter your age");
-if (userAge > 0) {
-    console.log (userAge);
-}
-else{
-    console.log("The Age is Erorr");
+else{alert ('unaccepte value!');};
 
-}
+var age=prompt('please enter your age');
+if (age<=0) {alert('age is less than or equal to zero!')}
+else {alert('age is reasonable');}; 
 
+var conf=confirm('do you want to skip the welcoming message?');
+
+
+
+
+if (gender.toLocaleLowerCase()=="male") {
+    alert('welcome Mr' + username);
+  } else if(gender.toLocaleLowerCase()=="female"){
+    alert('welcome Ms'+"  "   +username);
+  }
+  else{alert('welcome'+' '+username);};
