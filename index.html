@@ -1,45 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task 04</title>
-
-
+  <title>My To Do List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style/index.css" rel="stylesheet">
 </head>
+
 <body>
-    <header> 
-        <h1>Ahmad restaurant</h1>
-        <a link  href="./ about.html">about us</a>
-        <script src="./app.js"></script>
-        <script src="./ about.html"></script>
-    </header>
 
-    <main>
-<table>
-    <tr>
-        <th> tasks </th>
-        <th>status</th>
+  <img class="logo" src="./assest/to-do-list.png" alt="" srcset="" width="70px">
 
-    </tr>
-    <tr>
-        <td>task 01</td>
-        <td>task 02</td>
-        <td>task 03</td>
-    </tr>
-    <tr>
-        <td>done</td>
-        <td>done</td>
-        <td>done</td>
-    </tr>
-</table>
-    </main>
-    <footer>
-    <a href="www.facebook.com">our page on facebook</a>    
+  <div id="upper">
+    <button onclick="document.location='about.html'">about us</button>
+  </div>
 
-    <p>© Copyright</p>
 
-    </footer>
+  <header>
+    <h1>My ToDo list</h1>
+  </header>
+
+  <main class="main">
+    <section class="formContaner">
+      <form id="newTaskForm">
+        <div>
+          <table id="inputs">
+
+            <tr>
+              <th><label for="newTaskInput">Input Your Task 🤗 </label></th>
+            </tr>
+
+            <tr>
+              <td><input type="text" id="newTaskInput" placeholder="What is your planner...?"></td>
+            </tr>
+
+            <tr>
+              <td><label for="newTaskDate">The Date Is ...</label></td>
+            </tr>
+
+            <tr>
+              <td><input type="date" id="newTaskDate"></td>
+            </tr>
+
+            <tr>
+              <td><label for="interestTask">Urgency Task</label></td>
+            </tr>
+
+            <tr>
+              <td>
+                <select id="UrgencyTask">
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </td>
+            </tr>
+
+            <td>
+              <input type="submit" id="newTaskSubmit" value="Submit">
+            </td>
+
+          </table>
+        </div>
+      </form>
+    </section>
+
+    <hr>
+
+    <section class="taskList">
+      <h2>Tasks Table</h2>
+
+      <div class="content">
+        <table id="myTable">
+          <tbody>
+            <th>Task </th>
+            <th>Date</th>
+            <th>Urgency </th>
+            <th>Done</th>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="clearAll">
+        <button id="onClick" onclick="clearAllTasks()">Clear all Tasks</button>
+      </div>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <table id="footer">
+      <tbody>
+        <td>
+          <tr>© Copyright |</tr>
+          <tr>☎  |</tr>
+          <tr>✉  |</tr>
+          <tr>Ⓕ facebook/ </tr>
+        </td>
+      </tbody>
+    </table>
+  </footer>
+
+  <script src="../js/app.js"></script>
 </body>
+
 </html>
