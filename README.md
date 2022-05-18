@@ -1,2 +1,4 @@
 # todo-project
-# Wlecome to Todo Project
+
+![home](./assest/html.jpg)
+![home](./assest/about.jpg)
