@@ -1,35 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./style/about.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about us</title>
-    <link href="./index.html">
+    <title>about </title>
+
 </head>
 <body>
-    <header> 
-<h1>about Ahmad restaurant</h1>
-    </header>
-    <main>
-<section>
 
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/57201f63608955.5ab63a2a68a20.jpg" alt="Ahmad restaurant" width= "300" height="150">>
-</section>
-<section>
-    <p>Please enter your information</p>
-    <form>
+    <img class="logo" src="./assest/to-do-list.png" alt="" srcset="" width="70px">
 
-        <label >First name:</label><br>
-        <input type="text"><br>
-        <label >your email:</label><br>
-        <input type="text"> <br><br>
-        <input type="submit" value="Submit">
+  <div id="upper">
+    <button onclick="document.location='index.html'">home</button>
+  </div>
 
-</section>
+
+  <section>
+
+    <p>
+      <strong>description </strong>
+    </p>
+
+    <p>
+      daily to-do list
+      Stay organized with this accessible
+      daily to-do list template. On the one hand,
+      you can list important events, special occasions,
+      and holidays in one list, and on the other hand,
+      you can rely on your daily to-do list to ensure
+      the smooth running of work. Type a date in the
+      box to mark the tasks that need to be done on that day.
+    </p>
+  </section>
+
+  <hr>
+
+  <section>
+    <main class="aboutMain">
+      <form id="aboutTask">
+        <div>
+          <table id="detailsInputs">
+
+            <tr>
+              <th><label for="nameInput">Input Your Name 🤗 </label></th>
+            </tr>
+
+            <tr>
+              <td><input type="text" id="emailInput" placeholder="What is your name...?"></td>
+            </tr>
+
+            <tr>
+              <td><label for="newTaskDate">Email</label></td>
+            </tr>
+
+            <tr>
+              <td><input type="email" id="email"></td>
+            </tr>
+
+            <tr>
+              <td><label for="interestTask">Your Message</label></td>
+            </tr>
+
+            <tr>
+              <td><input type="text" id="message"></td>
+            </tr>
+
+            <td>
+              <input type="submit" id="sendEmail" value="Send Email">
+            </td>
+
+          </table>
+        </div>
+      </form>
     </main>
-    <footer>
+  </section>
 
-    </footer>
+  <footer>
+    <table id="footer">
+      <tbody>
+        <td>
+          <tr>© Copyright |</tr>
+          <tr>☎  |</tr>
+          <tr>✉  |</tr>
+          <tr>Ⓕ facebook/ </tr>
+        </td>
+      </tbody>
+    </table>
+  </footer>
 </body>
 </html>
